@@ -7,7 +7,7 @@ const index = express();
 index.use(express.json());
 index.use(
   cors({
-    origin: "http://localhost:3000", // Permite o frontend acessar o backend
+    origin: "http://localhost:3000", 
   })
 );
 

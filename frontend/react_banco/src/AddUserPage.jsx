@@ -74,8 +74,6 @@ function AddUserPage() {
     } catch (err) {
       console.error("Erro:", err);
       setShowError(true);
-      // Aqui você pode adicionar lógica para mostrar mensagens específicas se quiser
-      // Mas mantenha genérico conforme seu requisito
     } finally {
       setIsLoading(false);
     }
