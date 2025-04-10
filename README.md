@@ -34,6 +34,10 @@ entre em um navegador de sua preferencia e pesquise por:
 
 http://localhost:3000/
 
+ou acesse a API com : 
+
+http://localhost:8800/
+
 
 obs* é necessario tambem criar um banco de dados sql, abaixo consta o codigo para mysql
 -------------------------------------------------------------------------------------------
