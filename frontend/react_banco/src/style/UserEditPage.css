@@ -1,0 +1,145 @@
+/* UserEditPage.css */
+
+.user-edit-page {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #1a202c;
+    box-sizing: border-box; /* Adicionado para corrigir o vazamento */
+}
+
+.user-edit-page h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #1a202c;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.user-edit-page .form-group {
+    margin-bottom: 1.25rem;
+    padding: 0 0.5rem; /* Padding interno para evitar vazamento */
+}
+
+.user-edit-page label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2d3748;
+    font-size: 0.9375rem;
+}
+
+.user-edit-page input {
+    display: block;
+    width: calc(100% - 2rem); /* Ajuste para compensar o padding */
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: #f8fafc;
+    box-sizing: border-box; /* Garante que padding não aumente a largura */
+}
+
+.user-edit-page input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+    background-color: #ffffff;
+}
+
+.user-edit-page .button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 0 0.5rem; /* Consistência com os inputs */
+}
+
+.user-edit-page button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.user-edit-page button.primary {
+    background-color: #3182ce;
+    color: white;
+}
+
+.user-edit-page button.primary:hover {
+    background-color: #2c5282;
+    transform: translateY(-1px);
+}
+
+.user-edit-page button.secondary {
+    background-color: #ffffff;
+    color: #3182ce;
+    border: 1px solid #e2e8f0;
+}
+
+.user-edit-page button.secondary:hover {
+    background-color: #f7fafc;
+    border-color: #cbd5e0;
+}
+
+.user-edit-page .error-message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    padding: 0 0.5rem; /* Alinhamento com os inputs */
+}
+
+@media (max-width: 640px) {
+    .user-edit-page {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .user-edit-page h2 {
+        font-size: 1.5rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .user-edit-page input {
+        width: calc(100% - 1rem); /* Ajuste para mobile */
+    }
+}
+
+.error-message {
+    color: #d32f2f;
+    background-color: #fde0e0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .success-message {
+    color: #388e3c;
+    background-color: #ebf5eb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .file-input-container {
+    margin: 10px 0;
+  }
+  
+  input[type="file"] {
+    margin-top: 5px;
+  }
